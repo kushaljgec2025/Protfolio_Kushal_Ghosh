@@ -1,2 +1,8 @@
-# Protfolio_Kushal_Ghosh
-Portfolio website built with React.js &amp; Tailwind CSS, showcasing projects, skills, &amp; experience. Features responsive design, modern UI, project demos, skills section, &amp; contact form. Uses React.js for UI &amp; Tailwind CSS for styling. Deployed on GitHub Pages. Feel free to fork &amp; customize.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
