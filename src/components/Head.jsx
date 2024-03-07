@@ -50,23 +50,19 @@ function Head() {
       name: <CiUser className="m-auto" />,
       description: "About",
     },
+
     {
       id: 3,
-      name: <CiPen className="m-auto" />,
-      description: "Education",
-    },
-    {
-      id: 4,
       name: <CiGrid42 className="m-auto" />,
       description: "Skill",
     },
     {
-      id: 5,
+      id: 4,
       name: <CiMonitor className="m-auto" />,
       description: "Projects",
     },
     {
-      id: 6,
+      id: 5,
       name: <CiPhone className="m-auto" />,
       description: "Contact",
     },

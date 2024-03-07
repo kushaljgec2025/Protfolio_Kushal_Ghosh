@@ -31,7 +31,9 @@ function About() {
   return (
     <>
       <div className="lg:w-[60%] w-[90%] mt-[10vh] lg:mt-[5vh] ">
-        <h1 className=" text-2xl   text-center sm:text-left">ABOUT</h1>
+        <h1 className=" text-2xl   text-center sm:text-left text-midblue">
+          ABOUT
+        </h1>
         <div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit magni
@@ -49,27 +51,42 @@ function About() {
             necessitatibus eum facere odit quas fugit nobis? Magni reprehenderit
             quas voluptatum.
           </p>
-          <div className="w-full rounded-2xl   overflow-hidden my-5 mx-auto shadow-2xl ">
+          <div className=" about_img w-full rounded-2xl   overflow-hidden my-5 mx-auto shadow-2xl ">
             <img
-              className="   hover:scale-125 transition duration-500 ease-in-out object-fit m-auto "
+              className=" relative   hover:scale-125 transition duration-500 ease-in-out object-fit m-auto "
               src={user_img2}
               alt="img"
             />
           </div>
-        </div>
-        <div className="flex  justify-around gap-4 my-5">
-          {about_links.map((link, index) => (
+          <div className=" flex flex-row justify-between gap-5">
             <a
-              className="group bg-gradient-to-t from-cayn to-blue p-1 rounded-md shadow-xl "
-              key={index}
-              href={link.link}
-              target="_blank"
-              rel="noreferrer"
+              className="bg-slate bg-opacity-50 backdrop backdrop-blur-md grow p-1 py-2 text-center rounded-md shadow-xl  ring-white ring-1"
+              href=""
             >
-              {link.icon}
+              My Blogs
             </a>
-          ))}
+            <a
+              className="bg-slate bg-opacity-50 backdrop backdrop-blur-md grow p-1 py-2 text-center rounded-md shadow-xl ring-white ring-1"
+              href=""
+            >
+              Hire Me
+            </a>
+          </div>
+          <div className="flex z-10 justify-around gap-4 py-4   ">
+            {about_links.map((link, index) => (
+              <a
+                className="group bg-gradient-to-t  from-cayn to-blue p-1 rounded-md shadow-xl "
+                key={index}
+                href={link.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
         </div>
+
         <Line />
       </div>
     </>
