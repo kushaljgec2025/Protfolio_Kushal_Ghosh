@@ -36,20 +36,20 @@ function About() {
         </h1>
         <div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit magni
-            sequi, ipsa veritatis voluptas iste assumenda minus porro. Odio
-            cumque adipisci ad odit sunt eos impedit rem dolor quas expedita
-            quod soluta consectetur voluptatum error accusamus, explicabo quo
-            libero aut!lorem Ipsum dolor sit, amet consectetur adipisicing elit.
-            Odit magni sequi, ipsa Lorem ipsum40\ Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Error incidunt illum eius culpa
-            laboriosam omnis dolores quasi, obcaecati excepturi? A nobis sint
-            laudantium dolor. Hic maxime fuga consequatur assumenda nesciunt,
-            accusamus quas quasi eligendi, error, mollitia molestiae
-            necessitatibus voluptates repellendus vitae repudiandae nisi vel
-            incidunt expedita atque. Consectetur sit non, nulla, dolores at
-            necessitatibus eum facere odit quas fugit nobis? Magni reprehenderit
-            quas voluptatum.
+            Hello, my name is Kushal Ghosh. I'm currently pursuing B.Tech in
+            Information Technology at Jalpaiguri Government Engineering
+            College(Autonomous). I am passionate about Competitive Programming
+            and have solved over 1000 problems across platforms like CodeChef,
+            Codeforces, LeetCode, and AtCoder.I am Knight at Leetcode and
+            Specialist at Codeforce .Besides, I am interested in Frontend
+            Development and continuously aim to improve my technical competency
+            in software development area. My enthusiasm for exploring emerging
+            technologies has broadened my horizons and expanded my interests. I
+            have acquired valuable experience in working with technologies like
+            HTML, CSS, JavaScript and Python with React.js and Tailwind CSS. If
+            you would like to learn more about my work you can visit my Project
+            Section. I am open to new opportunities and collaborations, and you
+            can reach out to me through Contact Section.
           </p>
           <div className=" about_img w-full rounded-2xl   overflow-hidden my-5 mx-auto shadow-2xl ">
             <img

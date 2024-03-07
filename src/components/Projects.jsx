@@ -9,40 +9,59 @@ const frontend_projects = [
   {
     name: "Portfolio",
     description: "My portfolio website",
-    github: "",
-    demo: "",
+    github: "https://github.com/kushaljgec2025/Protfolio_Kushal_Ghosh",
+    demo: "https://protfolio-kushal-ghosh.vercel.app/",
     img: skill_img,
   },
   {
-    name: "Portfolio",
-    description: "My portfolio website",
-    github: "",
-    demo: "",
+    name: "FoodZone",
+    description: "Food Reciepe Website",
+    github: "https://github.com/kushaljgec2025/foodzone",
+    demo: "https://foodzone-ten.vercel.app/",
     img: skill_img,
   },
   {
-    name: "Portfolio",
-    description: "My portfolio website",
-    github: "",
-    demo: "",
+    name: "Clime-Sky",
+    description: "WeatherAppp",
+    github: "https://github.com/kushaljgec2025/Clime-Sky-waetherApp",
+    demo: "https://kushaljgec2025.github.io/Clime-Sky-waetherApp/",
+    img: skill_img,
+  },
+];
+
+const other_projects = [
+  {
+    name: "StockPrediction",
+    description: "Stpck Market Price Prediction",
+    github:
+      "https://github.com/kushaljgec2025/Stock_Market_Price_Prediction_Using-RNN",
+    demo: "https://github.com/kushaljgec2025/Stock_Market_Price_Prediction_Using-RNN",
     img: skill_img,
   },
   {
-    name: "Portfolio",
-    description: "My portfolio website",
-    github: "",
-    demo: "",
+    name: "Voice Assistant",
+    description: "Voice Assistant using Python",
+    github:
+      "https://github.com/kushaljgec2025/MOVA-My-Original-Voice-Assistant",
+    demo: "https://github.com/kushaljgec2025/MOVA-My-Original-Voice-Assistant",
     img: skill_img,
   },
 ];
 function Projects() {
   return (
     <div className="lg:w-[60%] w-[90%]  mt-[10vh] lg:mt-[5vh]   ">
-      <h1 className=" text-2xl mb-4 text-center sm:text-left">PROJECTS</h1>
+      <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
+        PROJECTS
+      </h1>
       <div className="flex lg:flex-row flex-col gap-10 lg:gap-[5em] justify-center">
         <div className="Frontend_Projects lg:w-[40%]  ">
           <h1 className=" text-2xl mb-4 text-center">Frontend Projects</h1>
-          <Carousel useKeyboardArrows className=" rounded-lg p-4">
+          <Carousel
+            useKeyboardArrows
+            autoPlay
+            infiniteLoop
+            className=" rounded-lg p-4"
+          >
             {frontend_projects.map((project, index) => {
               return (
                 <div key={index} className="flex flex-col ">
@@ -79,8 +98,8 @@ function Projects() {
         </div>
         <div className="Other_Projects lg:w-[40%] ">
           <h1 className=" text-2xl mb-4 text-center">Other Projects</h1>
-          <Carousel useKeyboardArrows className=" p-4">
-            {frontend_projects.map((project, index) => {
+          <Carousel useKeyboardArrows infiniteLoop autoPlay className=" p-4">
+            {other_projects.map((project, index) => {
               return (
                 <div key={index} className="flex flex-col ">
                   <div className="my-4">

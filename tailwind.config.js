@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  darkMode: 'selector',
+  darkMode: 'class',
   content: ["./src/**/*.{html,jsx}"],
   theme: {
     colors: {
@@ -19,6 +19,9 @@ export default {
 
     },
     extend: {
+      backgroundImage: {
+        info: 'linear-gradient(183deg, rgba(228,228,228,1) 0%, rgba(191,219,254,1) 100%)',
+      },
       keyframes: {
         typing: {
           "0%": {

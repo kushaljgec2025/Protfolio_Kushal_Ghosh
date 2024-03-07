@@ -44,7 +44,7 @@ function Contact() {
   ];
   return (
     <div className="contact lg:w-[60%] w-[90%]   lg:mt-[5vh] flex flex-col justify-center">
-      <h1 className="contact text-2xl mb-4 text-center sm:text-left">
+      <h1 className="contact text-2xl mb-4 text-center sm:text-left text-midblue">
         CONTACT
       </h1>
       <div className="contact_img !text-white  rounded-3xl">

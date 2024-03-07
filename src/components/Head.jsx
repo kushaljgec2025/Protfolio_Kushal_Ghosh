@@ -16,8 +16,8 @@ import Hamburger from "hamburger-react";
 
 function Head() {
   //Theme switching
-  const [theme, setTheme] = useState("light");
-  const [isDarkMode, setDarkMode] = useState(true);
+  const [theme, setTheme] = useState("dark");
+  const [isDarkMode, setDarkMode] = useState(false);
   const toggleDarkMode = (checked) => {
     setDarkMode(checked);
     if (theme === "light") {
@@ -79,7 +79,7 @@ function Head() {
           isOpen ? "fixed" : "hidden"
         } lg:block mt-8 lg:mt-3 z-10 lg:bg-gradient-to-r from-cayn fixed to-blue w-[95%] shadow-3xl bg-midblue  p-3 pb-2  m-2 backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
       >
-        <div className="flex lg:flex-row flex-col gap-4 justify-around lg:py-0 py-8">
+        <div className="flex lg:flex-row flex-col gap-8 justify-around lg:py-0 py-8">
           {items.map((item) => (
             <a
               key={item.id}

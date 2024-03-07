@@ -21,7 +21,7 @@ function Welcome() {
               with a keen interest in web development and problem-solving.
             </p>
             <div className="w-auto ">
-              <h1 className="animate-typing leading-tight overflow-hidden    whitespace-nowrap border-r-4 border-r-white pr-5 text-5xl text-white dark:text-slate  font-bold">
+              <h1 className="animate-typing leading-tight overflow-hidden   whitespace-nowrap border-r-4 border-r-gray pr-5 text-5xl text-white dark:text-slate  font-bold">
                 kg_codex
               </h1>
             </div>

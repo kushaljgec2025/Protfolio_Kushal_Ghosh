@@ -111,7 +111,9 @@ function Skill() {
   ];
   return (
     <div className="lg:w-[60%] w-[90%]    lg:mt-[5vh] ">
-      <h1 className=" text-2xl mb-4 text-center sm:text-left">SKILL</h1>
+      <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
+        SKILL
+      </h1>
       <div className="flex lg:flex-row flex-col gap-5">
         <div className="Programming-Languages m-auto   text-wrap mt-0">
           <h2 className=" text-xl font-bold my-4   text-center">

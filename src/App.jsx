@@ -14,7 +14,7 @@ import Education from "./components/Education.jsx";
 function App() {
   return (
     <>
-      <div className="container flex flex-col justify-center items-center dark:bg-white dark:text-slate ">
+      <div className="container flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">
         <Head />
 
         <Welcome />
