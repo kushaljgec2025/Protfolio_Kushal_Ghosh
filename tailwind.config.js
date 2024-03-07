@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
+  darkMode: 'selector',
   content: ["./src/**/*.{html,jsx}"],
   theme: {
     colors: {
@@ -10,10 +11,12 @@ export default {
       'gray': '#94a3b8',
       'lightblue': '#7dd3fc',
       'midblue': '#0ea5e9',
-      'darkblue': '#0c4a6e',
       'black': '#000000',
       'cayn': '#06b6d4',
       'blue': '#3b82f6',
+      'darkblue1': '#1e40af',
+      'darkblue2': '#1e3a8a',
+
     },
     extend: {
       keyframes: {

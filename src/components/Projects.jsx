@@ -42,12 +42,7 @@ function Projects() {
       <div className="flex lg:flex-row flex-col gap-10 lg:gap-[5em] justify-center">
         <div className="Frontend_Projects lg:w-[40%]  ">
           <h1 className=" text-2xl mb-4 text-center">Frontend Projects</h1>
-          <Carousel
-            infiniteLoop
-            useKeyboardArrows
-            autoPlay
-            className=" rounded-lg p-4"
-          >
+          <Carousel useKeyboardArrows className=" rounded-lg p-4">
             {frontend_projects.map((project, index) => {
               return (
                 <div key={index} className="flex flex-col ">
@@ -66,7 +61,7 @@ function Projects() {
                       >
                         <Github className="group-hover:scale-125  transition duration-500 ease-in-out" />
                       </a>
-                      <p className="text-center grow bg-blue p-2 rounded-xl">
+                      <p className="grow bg-blue p-2 rounded-xl !text-white text-center flex justify-center items-center">
                         {project.name}
                       </p>
                       <a
@@ -84,7 +79,7 @@ function Projects() {
         </div>
         <div className="Other_Projects lg:w-[40%] ">
           <h1 className=" text-2xl mb-4 text-center">Other Projects</h1>
-          <Carousel infiniteLoop useKeyboardArrows autoPlay className=" p-4">
+          <Carousel useKeyboardArrows className=" p-4">
             {frontend_projects.map((project, index) => {
               return (
                 <div key={index} className="flex flex-col ">
@@ -103,7 +98,7 @@ function Projects() {
                       >
                         <Github className="group-hover:scale-125 transition duration-500 ease-in-out" />
                       </a>
-                      <p className="grow bg-blue p-2 rounded-xl">
+                      <p className="grow bg-blue p-2 rounded-xl !text-white text-center flex justify-center items-center ">
                         {project.name}
                       </p>
                       <a

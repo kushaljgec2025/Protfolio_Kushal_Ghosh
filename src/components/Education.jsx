@@ -25,7 +25,7 @@ function Education() {
     },
   ];
   return (
-    <div className="lg:w-[60%] w-[90%]  mt-[10vh] lg:mt-[5vh] ">
+    <div className="lg:w-[60%] w-[90%]  mt-[10vh] lg:mt-[5vh] !text-white ">
       <h1 className=" text-2xl mb-4 text-center sm:text-left">EDUCATION</h1>
       <div>
         {edus_info.map((edu, index) => {

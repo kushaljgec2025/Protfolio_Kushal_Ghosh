@@ -43,11 +43,11 @@ function Contact() {
     },
   ];
   return (
-    <div className="contact lg:w-[60%] w-[90%]    lg:mt-[5vh] flex flex-col justify-center">
+    <div className="contact lg:w-[60%] w-[90%]   lg:mt-[5vh] flex flex-col justify-center">
       <h1 className="contact text-2xl mb-4 text-center sm:text-left">
         CONTACT
       </h1>
-      <div className="contact_img  rounded-3xl">
+      <div className="contact_img !text-white  rounded-3xl">
         <ul className="contact flex flex-row justify-between p-4 bg-white bg-opacity-20 backdrop backdrop-blur-sm rounded-t-3xl">
           {contact_details.map((detail, index) => (
             <li
@@ -61,7 +61,7 @@ function Contact() {
         </ul>
         <div>
           <div className="form-horizontal w-full flex flex-col  lg:grid lg:grid-cols-2     gap-10 my-2 p-4 ">
-            <div className="flex flex-col">
+            <div className="flex flex-col space-y-2">
               <label htmlFor="Name">Name</label>
               <input
                 id="Name"
@@ -71,7 +71,7 @@ function Contact() {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col space-y-2">
               <label htmlFor="Subject">Subject</label>
               <input
                 id="Subject"
@@ -81,7 +81,7 @@ function Contact() {
                 onChange={(e) => setSubject(e.target.value)}
               />
             </div>
-            <div className="flex flex-col col-span-2">
+            <div className="flex flex-col col-span-2 space-y-2">
               <label htmlFor="Content">Your Message</label>
               <textarea
                 id="Content"
