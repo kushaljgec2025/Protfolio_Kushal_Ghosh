@@ -5,7 +5,10 @@ import Line from "./Line";
 function Welcome() {
   return (
     <>
-      <div className="lg:w-[70%] w-[90%]  mt-[15vh]  lg:mt-[30vh]   flex flex-col items-stretch justify-between">
+      <div
+        className="lg:w-[70%] w-[90%]  mt-[15vh]  lg:mt-[30vh]   flex flex-col items-stretch justify-between  "
+        data-aos="fade-up"
+      >
         <div className=" p-2 flex  lg:flex-row flex-col gap-2  ">
           <div className=" m-auto   h-[20em]">
             <div className=" lg:-translate-y-5 w-[12em] h-[12em] m-auto rounded-[50%] bg-gradient-to-t from-cayn to-blue ring-8 hover:ring-white ">

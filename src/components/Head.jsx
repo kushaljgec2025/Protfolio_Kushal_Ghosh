@@ -80,14 +80,14 @@ function Head() {
           isOpen ? "fixed" : "hidden"
         } lg:block mt-8 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed  to-blue w-[95%] shadow-3xl bg-midblue  p-3 pb-2  m-2 backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
       >
-        <div className="flex lg:flex-row flex-col  gap-4 justify-around lg:py-0 pt-8">
+        <div className="flex lg:flex-row flex-col  gap-4 m-auto justify-around lg:py-0 pt-8">
           {items.map((item) => (
             <a
               key={item.id}
-              className="group border-b-[1px] border-gray lg:border-0    translate-y-2 lg:hover:-translate-y-1 transition duration-450 text-white text-xl  flex flex-col justify-center align-center"
+              className="group border-b-[1px] border-gray lg:border-0    translate-y-2 lg:hover:-translate-y-1 transition duration-450 ease-in-out text-white text-xl  flex flex-col justify-center items-center cursor-pointer"
             >
               {item.name}
-              <span className="text-sm lg:invisible lg:group-hover:visible text-center text-white my-2 ">
+              <span className="text-sm lg:invisible lg:group-hover:visible text-center text-white  ">
                 {item.description}
               </span>
             </a>

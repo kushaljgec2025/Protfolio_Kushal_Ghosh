@@ -49,7 +49,11 @@ const other_projects = [
 ];
 function Projects() {
   return (
-    <div className="lg:w-[70%] w-[90%]  mt-[10vh] lg:mt-[5vh]   ">
+    <div
+      className="lg:w-[70%] w-[90%]  mt-[10vh] lg:mt-[5vh]   "
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
       <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
         PROJECTS
       </h1>
@@ -60,36 +64,36 @@ function Projects() {
             useKeyboardArrows
             autoPlay
             infiniteLoop
-            className=" rounded-lg p-4"
+            className=" rounded-lg p-4 "
           >
             {frontend_projects.map((project, index) => {
               return (
-                <div key={index} className="flex flex-col ">
-                  <div className="my-4  ">
-                    <div className="bg-blue backdrop-filter  backdrop-blur-md bg-opacity-20 m-1 p-4 rounded-2xl hover:ring-2 ring-white">
-                      <img
-                        src={project.img}
-                        alt="project_img"
-                        className="   "
-                      />
-                    </div>
-                    <div className="flex gap-4  my-4 grow-1">
-                      <a
-                        className=" group  flex-none bg-gradient-to-t lg:flex from-cayn to-blue p-2 rounded-md"
-                        href={project.github}
-                      >
-                        <Github className="group-hover:scale-125  transition duration-500 ease-in-out" />
-                      </a>
-                      <p className="grow bg-blue p-2 rounded-xl !text-white text-center flex justify-center items-center">
-                        {project.name}
-                      </p>
-                      <a
-                        className=" group flex-none bg-gradient-to-t lg:flex from-cayn to-blue  p-2 rounded-md"
-                        href={project.demo}
-                      >
-                        <Eye className="group-hover:scale-125 transition duration-500 ease-in-out" />
-                      </a>
-                    </div>
+                <div key={index} className=" ">
+                  <div className="bg-gradient-to-t from-black/60 to-transparent backdrop-filter relative  backdrop-blur-md bg-opacity-20  rounded-full hover:ring-2 ring-white">
+                    <img
+                      src={project.img}
+                      alt="project_img"
+                      className="rounded-3xl"
+                    />
+                  </div>
+                  <div className="flex absolute inset-0 justify-ends items-end gap-2   m-3 mb-3 grow-1">
+                    <a
+                      className=" group  flex-none    p-2 rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md  transition duration-500 ease-in-out "
+                      href={project.github}
+                      target="_blank"
+                    >
+                      <Github className="group-hover:scale-125  transition duration-500 ease-in-out " />
+                    </a>
+                    <p className="grow   py-3 rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
+                      {project.name}
+                    </p>
+                    <a
+                      className=" group flex-none  p-2  rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md transition duration-500 ease-in-out "
+                      href={project.demo}
+                      target="_blank"
+                    >
+                      <Eye className="group-hover:scale-125 transition duration-500 ease-in-out " />
+                    </a>
                   </div>
                 </div>
               );
@@ -101,32 +105,32 @@ function Projects() {
           <Carousel useKeyboardArrows infiniteLoop autoPlay className=" p-4">
             {other_projects.map((project, index) => {
               return (
-                <div key={index} className="flex flex-col ">
-                  <div className="my-4">
-                    <div className="bg-blue backdrop-filter m-1 backdrop-blur-md bg-opacity-20 p-4 rounded-2xl hover:ring-2 ring-white">
-                      <img
-                        src={project.img}
-                        alt="project_img"
-                        className="   "
-                      />
-                    </div>
-                    <div className="flex gap-4  my-4 grow-1">
-                      <a
-                        className="group flex-none bg-gradient-to-t  lg:flex from-cayn to-blue p-2 rounded-md"
-                        href={project.github}
-                      >
-                        <Github className="group-hover:scale-125 transition duration-500 ease-in-out" />
-                      </a>
-                      <p className="grow bg-blue p-2 rounded-xl !text-white text-center flex justify-center items-center ">
-                        {project.name}
-                      </p>
-                      <a
-                        className=" group flex-none bg-gradient-to-t lg:flex from-cayn to-blue  p-2 rounded-md"
-                        href={project.demo}
-                      >
-                        <Eye className="group-hover:scale-125 transition duration-500 ease-in-out" />
-                      </a>
-                    </div>
+                <div key={index} className=" ">
+                  <div className="bg-gradient-to-t from-black/60 to-transparent backdrop-filter relative  backdrop-blur-md bg-opacity-20  rounded-full hover:ring-2 ring-white">
+                    <img
+                      src={project.img}
+                      alt="project_img"
+                      className="rounded-3xl"
+                    />
+                  </div>
+                  <div className="flex absolute inset-0 justify-ends items-end gap-2   m-3 mb-3 grow-1">
+                    <a
+                      className=" group  flex-none    p-2 rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md  transition duration-500 ease-in-out "
+                      href={project.github}
+                      target="_blank"
+                    >
+                      <Github className="group-hover:scale-125  transition duration-500 ease-in-out " />
+                    </a>
+                    <p className="grow   py-3 rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
+                      {project.name}
+                    </p>
+                    <a
+                      className=" group flex-none  p-2  rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md transition duration-500 ease-in-out "
+                      href={project.demo}
+                      target="_blank"
+                    >
+                      <Eye className="group-hover:scale-125 transition duration-500 ease-in-out " />
+                    </a>
                   </div>
                 </div>
               );

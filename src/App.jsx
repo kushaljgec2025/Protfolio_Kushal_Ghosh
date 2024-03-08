@@ -7,14 +7,20 @@ import About from "./components/About.jsx";
 import Skill from "./components/Skill.jsx";
 import Project from "./components/Projects.jsx";
 import "./App.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Contact from "./components/Contact.jsx";
 import Education from "./components/Education.jsx";
-
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  });
   return (
     <>
-      <div className="container flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">
+      <div className="container w-screen min-h-screen px-1 flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">
         <Head />
 
         <Welcome />

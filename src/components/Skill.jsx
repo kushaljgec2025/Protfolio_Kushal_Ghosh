@@ -110,7 +110,11 @@ function Skill() {
     },
   ];
   return (
-    <div className="lg:w-[70%] w-[90%]    lg:mt-[5vh] ">
+    <div
+      className="lg:w-[70%] w-[90%]    lg:mt-[5vh] "
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
       <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
         SKILL
       </h1>

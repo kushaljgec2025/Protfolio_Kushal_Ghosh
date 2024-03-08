@@ -16,10 +16,10 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #fff;
 }
-
+/* 
 .carousel.carousel-slider .control-arrow {
   height: 100px;
-}
+} */
 .carousel.carousel-slider .control-arrow:hover {
   background-color: transparent !important;
 }

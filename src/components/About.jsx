@@ -32,7 +32,11 @@ function About() {
   ];
   return (
     <>
-      <div className="lg:w-[70%] w-[90%] mt-[10vh] lg:mt-[5vh] ">
+      <div
+        className="lg:w-[70%] w-[90%] mt-[10vh] lg:mt-[5vh] "
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <h1 className=" text-2xl   text-center sm:text-left text-midblue">
           ABOUT
         </h1>
@@ -53,7 +57,7 @@ function About() {
             Section. I am open to new opportunities and collaborations, and you
             can reach out to me through Contact Section.
           </p>
-          <div className="group relative about_img w-full rounded-2xl   overflow-hidden my-5 mx-auto shadow-2xl ">
+          <div className="group relative about_img lg:w-[80%] rounded-2xl   overflow-hidden my-5 mx-auto shadow-2xl ">
             <img
               className="   group-hover:scale-110 transition duration-500 ease-in-out object-fit m-auto "
               src={user_img2}
@@ -74,7 +78,7 @@ function About() {
             </div>
           </div>
 
-          <div className=" flex flex-row justify-between  items-end  gap-5">
+          <div className=" flex flex-row justify-between lg:w-[80%] items-end m-auto  gap-5">
             <a
               className="bg-slate bg-opacity-50 backdrop backdrop-blur-md flex justify-center items-center w-[40vw]  transition duration-500 ease-in-out  gap-2  p-1 py-2 text-center rounded-md hover:shadow-2xl hover:ring-midblue hover:ring-2  dark:hover:text-white hover:text-gray  ring-white ring-1"
               href=""

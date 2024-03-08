@@ -43,7 +43,11 @@ function Contact() {
     },
   ];
   return (
-    <div className="contact lg:w-[70%] w-[90%]   lg:mt-[5vh] flex flex-col justify-center">
+    <div
+      className="contact lg:w-[70%] w-[90%]   lg:mt-[5vh] flex flex-col justify-center"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
       <h1 className="contact text-2xl mb-4 text-center sm:text-left text-midblue">
         CONTACT
       </h1>
