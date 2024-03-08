@@ -9,6 +9,7 @@ import {
   CiSun,
   CiCloudMoon,
 } from "react-icons/ci";
+import { CiCircleChevUp } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
@@ -77,9 +78,9 @@ function Head() {
       <div
         className={`${
           isOpen ? "fixed" : "hidden"
-        } lg:block mt-8 lg:mt-3 z-10 lg:bg-gradient-to-r from-cayn fixed to-blue w-[95%] shadow-3xl bg-midblue  p-3 pb-2  m-2 backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
+        } lg:block mt-8 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed  to-blue w-[95%] shadow-3xl bg-midblue  p-3 pb-2  m-2 backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
       >
-        <div className="flex lg:flex-row flex-col gap-8 justify-around lg:py-0 py-8">
+        <div className="flex lg:flex-row flex-col  gap-4 justify-around lg:py-0 pt-8">
           {items.map((item) => (
             <a
               key={item.id}
@@ -91,6 +92,12 @@ function Head() {
               </span>
             </a>
           ))}
+          <span className={`flex justify-center lg:hidden `}>
+            <CiCircleChevUp
+              className="text-white text-[2em]  "
+              onClick={(prev) => setOpen(!prev)}
+            />
+          </span>
         </div>
       </div>
       <div className="fixed top-3 z-50 right-4 ">

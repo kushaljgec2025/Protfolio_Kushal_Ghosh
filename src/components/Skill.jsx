@@ -110,39 +110,43 @@ function Skill() {
     },
   ];
   return (
-    <div className="lg:w-[60%] w-[90%]    lg:mt-[5vh] ">
+    <div className="lg:w-[70%] w-[90%]    lg:mt-[5vh] ">
       <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
         SKILL
       </h1>
-      <div className="flex lg:flex-row flex-col gap-5">
+      <div className="flex lg:flex-row  flex-col flex-wrap">
         <div className="Programming-Languages m-auto   text-wrap mt-0">
-          <h2 className=" text-xl font-bold my-4   text-center">
+          <h2 className=" text-lg font-semibold my-4   text-center">
             Programming Language
           </h2>
           <Line />
-          <ul className="flex flex-col m-auto ">
-            {prog_langs.map((lang, index) => {
-              return (
-                <li key={index} className="flex m-auto gap-5">
-                  <div className="bg-blue  m-auto flex justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-20  w-10 h-10 rounded-md p-2 hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
-                    {lang.icons}
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-sm ">{lang.name}</h3>
-                    <p className="text-lightblue ">{lang.level}</p>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="flex m-auto gap-5">
+            <ul className="flex flex-col m-auto ">
+              {prog_langs.map((lang, index) => {
+                return (
+                  <li key={index} className="flex  gap-5">
+                    <div className="bg-blue  m-auto flex justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-20  w-10 h-10 rounded-md p-2 hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
+                      {lang.icons}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-sm ">{lang.name}</h3>
+                      <p className="text-lightblue dark:text-midblue  ">
+                        {lang.level}
+                      </p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
         <div className="Frontend_tools m-auto mt-0">
-          <h2 className="text-xl font-bold text-center m-auto my-4">
+          <h2 className="text-lg font-semibold text-center m-auto my-4">
             Frontend Tools
           </h2>
           <Line />
           <div className="flex m-auto gap-5">
-            <ul>
+            <ul className="flex flex-col m-auto ">
               {fronted_tools.map((tool, index) => {
                 return (
                   <li key={index} className="flex  gap-5">
@@ -151,7 +155,9 @@ function Skill() {
                     </div>
                     <div>
                       <h3 className=" text-sm font-bold">{tool.name}</h3>
-                      <p className="text-lightblue ">{tool.level}</p>
+                      <p className="text-lightblue dark:text-midblue ">
+                        {tool.level}
+                      </p>
                     </div>
                   </li>
                 );
@@ -160,7 +166,7 @@ function Skill() {
           </div>
         </div>
         <div className="Design_Tools m-auto mt-0">
-          <h2 className="text-xl font-bold  text-center m-auto my-4">
+          <h2 className="text-lg font-semibold  text-center m-auto my-4">
             Design Tools
           </h2>
           <Line />
@@ -174,7 +180,9 @@ function Skill() {
                     </div>
                     <div>
                       <h3 className=" text-sm font-bold">{tool.name}</h3>
-                      <p className="text-lightblue ">{tool.level}</p>
+                      <p className="text-lightblue dark:text-midblue ">
+                        {tool.level}
+                      </p>
                     </div>
                   </li>
                 );
@@ -183,7 +191,9 @@ function Skill() {
           </div>
         </div>
         <div className="Familiar_With m-auto mt-0">
-          <h2 className="text-xl font-bold  m-auto my-4">Familiar With</h2>
+          <h2 className="text-lg font-semibold text-center  m-auto my-4">
+            Familiar With
+          </h2>
           <Line />
           <div className="flex m-auto gap-5">
             <ul>
@@ -195,7 +205,9 @@ function Skill() {
                     </div>
                     <div>
                       <h3 className=" text-sm font-bold">{tool.name}</h3>
-                      <p className="text-lightblue ">{tool.level}</p>
+                      <p className="text-lightblue dark:text-midblue ">
+                        {tool.level}
+                      </p>
                     </div>
                   </li>
                 );

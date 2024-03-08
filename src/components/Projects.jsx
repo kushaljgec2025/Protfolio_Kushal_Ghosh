@@ -49,7 +49,7 @@ const other_projects = [
 ];
 function Projects() {
   return (
-    <div className="lg:w-[60%] w-[90%]  mt-[10vh] lg:mt-[5vh]   ">
+    <div className="lg:w-[70%] w-[90%]  mt-[10vh] lg:mt-[5vh]   ">
       <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
         PROJECTS
       </h1>
