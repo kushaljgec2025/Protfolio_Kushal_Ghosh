@@ -12,6 +12,7 @@ import {
 import { CiCircleChevUp } from "react-icons/ci";
 import { useState, useEffect } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
+import { Link, NavLink } from "react-router-dom";
 
 import Hamburger from "hamburger-react";
 
@@ -44,7 +45,7 @@ function Head() {
     {
       id: 1,
       name: <CiHome className="m-auto " />,
-      description: "Home",
+      description: "Welcome",
     },
     {
       id: 2,
@@ -70,7 +71,7 @@ function Head() {
   ];
 
   return (
-    <div className="w-full m-auto flex justify-center  ">
+    <div className="w-full m-auto flex justify-center select-none ">
       <div className="bg-midblue dark:bg-gray backdrop backdrop-blur-md dark:bg-opacity-20 bg-opacity-20 w-full h-[10vh] rounded-b-xl lg:hidden fixed z-40 "></div>
       <div className="fixed top-2 lg:hidden z-50 left-4">
         <Hamburger toggled={isOpen} toggle={setOpen} />
@@ -83,7 +84,9 @@ function Head() {
         <div className="flex lg:flex-row flex-col  gap-4 m-auto justify-around lg:py-0 pt-8">
           {items.map((item) => (
             <a
+              href={`#${item.description}`}
               key={item.id}
+              onClick={(prev) => setOpen(!prev)}
               className="group border-b-[1px] border-gray lg:border-0    translate-y-2 lg:hover:-translate-y-1 transition duration-450 ease-in-out text-white text-xl  flex flex-col justify-center items-center cursor-pointer"
             >
               {item.name}

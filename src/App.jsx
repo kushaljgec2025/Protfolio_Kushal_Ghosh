@@ -11,11 +11,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/Contact.jsx";
 import Education from "./components/Education.jsx";
+import { Outlet } from "react-router-dom";
+
 import { useEffect } from "react";
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 1000,
     });
   });
   return (
