@@ -3,11 +3,11 @@ import Line from "./Line";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import skill_img from "../img/skill_img.png";
-import Protfolio_img from "../img/Protfolio_img.png";
-import Foodzone_img from "../img/Foodzone_img.png";
-import Climesky_img from "../img/Climesky_img.png";
+import Protfolio_img from "../img/Protfolio_img.jpg";
+import Foodzone_img from "../img/FoodZone_img.jpg";
+import Climesky_img from "../img/Climesky_img.jpg";
 import StockPrediction_img from "../img/StockPrediction_img.png";
-import MOVA_img from "../img/MOVA_img.png";
+import MOVA_img from "../img/MOVA_img.jpg";
 import { Github, Eye } from "./Links";
 
 const frontend_projects = [
@@ -58,12 +58,12 @@ function Projects() {
       id="Projects"
       className="flex justify-center w-full items-center pt-[15vh]"
     >
-      <div id="Projects" className="lg:w-[70%] w-[90%] " data-aos="fade-up">
+      <div className="lg:w-[70%] w-[90%] " data-aos="fade-up">
         <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
           PROJECTS
         </h1>
-        <div className="flex lg:flex-row flex-col gap-10 lg:gap-[5em] justify-center">
-          <div className="Frontend_Projects lg:w-[40%]  ">
+        <div className="flex lg:flex-row flex-col gap-10 lg:gap-[3em] justify-center">
+          <div className="Frontend_Projects lg:w-[45%]  ">
             <h1 className=" text-2xl mb-4 text-center">Frontend Projects</h1>
             <div className="rounded-3xl overflow-hidden  ">
               <Carousel
@@ -94,7 +94,7 @@ function Projects() {
                         >
                           <Github className="group-hover:scale-125  transition duration-500 ease-in-out " />
                         </a>
-                        <p className="grow self-start  pb-3 rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
+                        <p className="grow self-start bg-gray rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
                           {project.name}
                         </p>
                         <a
@@ -111,20 +111,20 @@ function Projects() {
               </Carousel>
             </div>
           </div>
-          <div className="Other_Projects lg:w-[40%] ">
+          <div className="Other_Projects lg:w-[45%] ">
             <h1 className=" text-2xl mb-4 text-center">Other Projects</h1>
             <Carousel
               useKeyboardArrows
               infiniteLoop
               autoPlay
               showThumbs={false}
-              className=" p-4"
+              className=" p-4 "
             >
               {other_projects.map((project, index) => {
                 return (
                   <div
                     key={index}
-                    className="  rounded-3xl overflow-hidden border border-1 border-gray"
+                    className="rounded-3xl overflow-hidden border border-1 border-gray"
                   >
                     <div className="bg-gradient-to-t from-black/60 to-transparent backdrop-filter relative  backdrop-blur-md bg-opacity-20  rounded-3xl hover:ring-2 ring-white">
                       <img
@@ -141,7 +141,7 @@ function Projects() {
                       >
                         <Github className="group-hover:scale-125  transition duration-500 ease-in-out " />
                       </a>
-                      <p className="grow  self-start  pb-3 rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
+                      <p className="grow  self-start  bg-gray rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
                         {project.name}
                       </p>
                       <a
