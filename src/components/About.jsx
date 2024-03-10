@@ -1,6 +1,6 @@
 import React from "react";
 import Line from "./Line";
-import user_img2 from "../img/user_img2.jpg";
+import user_img_col from "../img/use_img_col.jpg";
 import { Github, Facebook, Instagram, Linkedin } from "./Links";
 import { FaBloggerB } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
@@ -61,7 +61,7 @@ function About() {
             <div className="group relative about_img lg:w-[80%] rounded-2xl   overflow-hidden my-5 mx-auto shadow-2xl ">
               <img
                 className="   group-hover:scale-110 transition duration-500 ease-in-out object-fit m-auto "
-                src={user_img2}
+                src={user_img_col}
                 alt="img"
               />
               <div className="  absolute inset-0 flex z-10 justify-around hover:bg-gradient-to-t from-black/40 to-transparent via-bg-transparent items-end gap-4 py-2   ">

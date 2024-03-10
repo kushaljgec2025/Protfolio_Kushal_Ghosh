@@ -36,7 +36,7 @@ const frontend_projects = [
 
 const other_projects = [
   {
-    name: "StockPrediction",
+    name: "Stock",
     description: "Stpck Market Price Prediction",
     github:
       "https://github.com/kushaljgec2025/Stock_Market_Price_Prediction_Using-RNN",
@@ -86,9 +86,9 @@ function Projects() {
                           className="rounded-3xl overflow-hidden object-cover"
                         />
                       </div>
-                      <div className="flex absolute inset-0 justify-ends items-end gap-2 rounded-3xl overflow-hidden  m-3 mb-3 grow-1">
+                      <div className="flex absolute inset-0 justify-ends items-end gap-2   m-3 mb-3 grow-1">
                         <a
-                          className=" group  flex-none    p-2 rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md  transition duration-500 ease-in-out "
+                          className=" group  flex-none cursor-pointer hover:ring-midblue hover:ring-2  p-2 rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md  transition duration-500 ease-in-out "
                           href={project.github}
                           target="_blank"
                         >
@@ -98,7 +98,7 @@ function Projects() {
                           {project.name}
                         </p>
                         <a
-                          className=" group flex-none  p-2  rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md transition duration-500 ease-in-out "
+                          className=" group flex-none cursor-pointer hover:ring-midblue hover:ring-2 p-2  rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md transition duration-500 ease-in-out "
                           href={project.demo}
                           target="_blank"
                         >
@@ -135,17 +135,17 @@ function Projects() {
                     </div>
                     <div className="flex absolute inset-0 justify-ends items-end gap-1 rounded-3xl overflow:hidden  m-3 mb-3 grow-1">
                       <a
-                        className=" group  flex-none    p-2 rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md  transition duration-500 ease-in-out "
+                        className=" group  flex-none cursor-pointer  hover:ring-midblue hover:ring-2  p-2 rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md  transition duration-500 ease-in-out "
                         href={project.github}
                         target="_blank"
                       >
                         <Github className="group-hover:scale-125  transition duration-500 ease-in-out " />
                       </a>
-                      <p className="grow  self-start  bg-gray rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
+                      <p className="grow   self-start  bg-gray rounded-xl !text-white text-center flex justify-center items-center   transition duration-500 ease-in-out ">
                         {project.name}
                       </p>
                       <a
-                        className=" group flex-none  p-2  rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md transition duration-500 ease-in-out "
+                        className=" group flex-none cursor-pointer hover:ring-midblue hover:ring-2  p-2  rounded-full bg-slate bg-opacity-50 backdrop backdrop-blur-md transition duration-500 ease-in-out "
                         href={project.demo}
                         target="_blank"
                       >

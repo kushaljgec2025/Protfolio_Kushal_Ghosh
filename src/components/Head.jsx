@@ -37,10 +37,12 @@ function Head() {
     }
   }, [theme]);
 
-  const [isActive, setIsActive] = useState(false);
-  const handleClick = () => {
+  const [isActive, setIsActive] = useState(1);
+  const handleClick = (item) => {
+    console.log(item);
     setOpen(!isOpen);
-    setIsActive(!isActive);
+    setIsActive(item.id);
+    console.log(isActive);
   };
   //
 
@@ -54,50 +56,64 @@ function Head() {
     },
     {
       id: 2,
-      name: <CiUser className="m-auto" />,
+      name: <CiUser className="m-auto self-center" />,
       description: "About",
     },
 
     {
       id: 3,
-      name: <CiGrid42 className="m-auto" />,
+      name: <CiGrid42 className="m-auto self-center" />,
       description: "Skill",
     },
     {
       id: 4,
-      name: <CiMonitor className="m-auto" />,
+      name: <CiMonitor className="m-auto self-center" />,
       description: "Projects",
     },
     {
       id: 5,
-      name: <CiPhone className="m-auto" />,
+      name: <CiPhone className="m-auto self-center" />,
       description: "Contact",
     },
   ];
 
   return (
     <div className="w-full m-auto flex justify-center select-none ">
-      <div className="bg-midblue dark:bg-gray backdrop backdrop-blur-md dark:bg-opacity-20 bg-opacity-20 w-full h-[10vh] rounded-b-xl lg:hidden fixed z-40 "></div>
+      <div
+        className={`bg-midblue dark:bg-gray backdrop backdrop-blur-md dark:bg-opacity-20 bg-opacity-20 w-full h-[10vh] rounded-b-xl lg:hidden fixed  z-40`}
+      ></div>
       <div className="fixed top-2 lg:hidden z-50 left-4">
         <Hamburger toggled={isOpen} toggle={setOpen} />
       </div>
       <div
         className={`${
           isOpen ? "fixed" : "hidden"
-        } lg:block mt-8 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed   to-blue w-[95%] shadow-3xl bg-midblue  p-3 pb-2  m-2 backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
+        } lg:block mt-8 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed   to-blue w-[95%] shadow-3xl bg-midblue pb-2   backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
       >
         <div className="flex lg:flex-row lg:-end flex-col  gap-4 m-auto justify-around lg:py-0 pt-8">
           {items.map((item) => (
             <a
               href={`#${item.description}`}
               key={item.id}
-              onClick={handleClick}
-              className={`group  border-b-[1px] p-4 border-gray py-2 lg:py-0 lg:border-0   hover:text-slate  rounded-xl    transition duration-450 ease-in-out text-white text-xl  flex flex-col justify-center items-center cursor-pointer
-              
+              onClick={() => {
+                handleClick(item);
+              }}
+              className={`group w-full  lg:w-[4em] h-[3em]   self-center hover:text-slate   lg:rounded-b-xl  transition duration-450 ease-in-out text-white text-xl  flex flex-col justify-center items-center cursor-pointer
+            ${
+              isActive == item.id
+                ? "lg:text-slate  lg:bg-white  lg:shadow-2xl"
+                : "lg:text-white"
+            }
               }`}
             >
               {item.name}
-              <span className="text-sm lg:invisible lg:group-hover:visible group-hover:text-slate text-center text-white  ">
+              <span
+                className={`${
+                  isActive == item.id
+                    ? "lg:visible lg:text-slate"
+                    : "lg:invisible lg:text-white"
+                } text-sm  lg:group-hover:visible group-hover:text-slate text-center text-white `}
+              >
                 {item.description}
               </span>
             </a>
@@ -110,7 +126,9 @@ function Head() {
             />
           </span>
         </div>
+        <div className="w-full h-1 bg-white  absolute inset-0 rounded-t-lg"></div>
       </div>
+
       <div className="fixed top-3 z-50 right-4 ">
         <DarkModeSwitch
           checked={isDarkMode}

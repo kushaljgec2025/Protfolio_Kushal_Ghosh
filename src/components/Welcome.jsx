@@ -10,13 +10,14 @@ function Welcome() {
         className="flex justify-center w-full items-center lg:pt-[15vh]"
       >
         <div
-          className="lg:w-[70%] w-[90%]  mt-[15vh]  lg:mt-[5vh]   flex flex-col items-stretch justify-between  "
+          className="lg:w-[70%] w-[90%]  mt-[15vh]  lg:mt-[5vh]   flex flex-col  justify-between  "
           data-aos="fade-up"
         >
-          <div className=" p-2 flex  lg:flex-row flex-col gap-2  ">
-            <div className=" m-auto   h-[20em]">
-              <img className="w-full z-1" src={user_img} alt="user_img" />
+          <div className="  flex  lg:flex-row flex-col justify-center gap-2  ">
+            <div className=" flex justify-center  lg:w-[25em] m-auto rounded-[50%] border-5 border-gray   ">
+              <img className=" z-1  m-auto" src={user_img} alt="user_img" />
             </div>
+
             <div className=" basis-1/2 flex justify-center flex-col  gap-5 ">
               <h2>HEY , I AM</h2>
               <h5 className="text-6xl text-midblue">Kushal Ghosh</h5>
@@ -33,7 +34,6 @@ function Welcome() {
               </div>
             </div>
           </div>
-          <Line />
         </div>
       </div>
     </>
