@@ -1,6 +1,6 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-
+import { useRef } from "react";
 import Welcome from "./components/Welcome.jsx";
 import Head from "./components/Head.jsx";
 import About from "./components/About.jsx";
@@ -20,6 +20,7 @@ function App() {
       duration: 1500,
     });
   });
+
   return (
     <>
       <div className="container w-screen min-h-screen px-1 flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">

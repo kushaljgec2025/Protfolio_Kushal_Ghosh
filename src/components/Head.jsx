@@ -9,10 +9,14 @@ import {
   CiSun,
   CiCloudMoon,
 } from "react-icons/ci";
+import { Link } from "react-scroll";
 import { CiCircleChevUp } from "react-icons/ci";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
-import { Link, NavLink } from "react-router-dom";
+
+const scrollToRef = (ref) => {
+  ref.current.scrollIntoView({ behavior: "smooth" });
+};
 
 import Hamburger from "hamburger-react";
 
@@ -51,7 +55,7 @@ function Head() {
   const items = [
     {
       id: 1,
-      name: <CiHome className="m-auto " />,
+      name: <CiHome className="m-auto self-center " />,
       description: "Welcome",
     },
     {
@@ -88,21 +92,26 @@ function Head() {
       <div
         className={`${
           isOpen ? "fixed" : "hidden"
-        } lg:block mt-8 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed   to-blue w-[95%] shadow-3xl bg-midblue pb-2   backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
+        } lg:block mt-8 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed overflow-hidden  to-blue w-[95%] shadow-3xl bg-midblue pb-2   backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
       >
         <div className="flex lg:flex-row lg:-end flex-col  gap-4 m-auto justify-around lg:py-0 pt-8">
           {items.map((item) => (
-            <a
-              href={`#${item.description}`}
+            <Link
+              activeClass="active"
+              to={`${item.description}`}
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
               key={item.id}
               onClick={() => {
                 handleClick(item);
               }}
-              className={`group w-full  lg:w-[4em] h-[3em]   self-center hover:text-slate   lg:rounded-b-xl  transition duration-450 ease-in-out text-white text-xl  flex flex-col justify-center items-center cursor-pointer
+              className={`group w-full  lg:w-[4em] h-[3em] m-1   self-center hover:text-slate   lg:rounded-b-xl   text-white text-xl  flex flex-col justify-center items-center cursor-pointer
             ${
               isActive == item.id
-                ? "lg:text-slate  lg:bg-white  lg:shadow-2xl"
-                : "lg:text-white"
+                ? "lg:text-slate  lg:bg-white lg:bg-opacity-80  lg:shadow-2xl"
+                : "lg:text-white lg:translate-y-2"
             }
               }`}
             >
@@ -111,12 +120,12 @@ function Head() {
                 className={`${
                   isActive == item.id
                     ? "lg:visible lg:text-slate"
-                    : "lg:invisible lg:text-white"
-                } text-sm  lg:group-hover:visible group-hover:text-slate text-center text-white `}
+                    : "lg:invisible lg:text-white lg:-translate-y-4"
+                } text-sm  text-center text-white `}
               >
                 {item.description}
               </span>
-            </a>
+            </Link>
           ))}
 
           <span className={`flex justify-center lg:hidden cursor-pointer `}>
@@ -126,7 +135,7 @@ function Head() {
             />
           </span>
         </div>
-        <div className="w-full h-1 bg-white  absolute inset-0 rounded-t-lg"></div>
+        <div className="w-full h-1 bg-white bg-opacity-80  absolute inset-0 rounded-t-2xl"></div>
       </div>
 
       <div className="fixed top-3 z-50 right-4 ">
