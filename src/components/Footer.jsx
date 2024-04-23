@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa6";
 function Footer() {
   return (
-    <div className="footer w-full z-10  bg-slate flex md:flex-row flex-col gap-2  justify-around items-center p-4 pb-[16vh] rounded-t-lg">
+    <div className="footer w-full z-10  bg-slate flex md:flex-row flex-col gap-2  justify-around items-center p-4 sm:pb-4 pb-[16vh] rounded-t-lg">
       <div className="flex justify-around gap-4 bg-white p-2 rounded-lg text-slate ">
         <Link to="https://github.com/kushaljgec2025" className=" text-xl">
           <FaGithub />
