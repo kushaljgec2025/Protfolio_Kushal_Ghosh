@@ -11,9 +11,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Contact from "./components/Contact.jsx";
 import Education from "./components/Education.jsx";
+import Footer from "./components/Footer.jsx";
 import { Outlet } from "react-router-dom";
 
 import { useEffect } from "react";
+import Layout from "./components/Layout.jsx";
+import Lowernav from "./components/Lowernav.jsx";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -22,20 +25,15 @@ function App() {
   });
 
   return (
-    <>
-      <div className="container w-screen min-h-screen px-1 flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">
-        <Head />
-
-        <Welcome />
-
-        <About />
-
-        <Skill />
-        <Project />
-
-        <Contact />
-      </div>
-    </>
+    <div className="w-full flex flex-col justify-center items-center ">
+      {" "}
+      <Head />
+      <Layout className="w-full">
+        <Outlet />
+      </Layout>
+      <Footer />
+      <Lowernav />
+    </div>
   );
 }
 

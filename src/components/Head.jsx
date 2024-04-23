@@ -10,6 +10,7 @@ import {
   CiCloudMoon,
 } from "react-icons/ci";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
 import { CiCircleChevUp } from "react-icons/ci";
 import { useState, useEffect, useRef } from "react";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
@@ -57,27 +58,32 @@ function Head() {
       id: 1,
       name: <CiHome className="m-auto self-center " />,
       description: "Welcome",
+      link: "/",
     },
     {
       id: 2,
       name: <CiUser className="m-auto self-center" />,
       description: "About",
+      link: "/about",
     },
 
     {
       id: 3,
       name: <CiGrid42 className="m-auto self-center" />,
       description: "Skill",
+      link: "/skill",
     },
     {
       id: 4,
       name: <CiMonitor className="m-auto self-center" />,
       description: "Projects",
+      link: "/projects",
     },
     {
       id: 5,
       name: <CiPhone className="m-auto self-center" />,
       description: "Contact",
+      link: "/contact",
     },
   ];
 
@@ -92,13 +98,13 @@ function Head() {
       <div
         className={`${
           isOpen ? "fixed" : "hidden"
-        } lg:block mt-8 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed overflow-hidden  to-blue w-[95%] shadow-3xl bg-midblue pb-2   backdrop-filter   backdrop-blur-md bg-opacity-40   rounded-lg shadow-2xl  lg:w-[60%] `}
+        } lg:block mt-10 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed overflow-hidden  to-blue w-[95%] shadow-3xl bg-slate pb-2   backdrop-filter   backdrop-blur-md bg-opacity-80   rounded-lg shadow-2xl  lg:w-[60%] `}
       >
         <div className="flex lg:flex-row lg:-end flex-col  gap-4 m-auto justify-around lg:py-0 pt-8">
           {items.map((item) => (
-            <Link
+            <NavLink
               activeClass="active"
-              to={`${item.description}`}
+              to={item.link}
               spy={true}
               smooth={true}
               offset={0}
@@ -125,7 +131,7 @@ function Head() {
               >
                 {item.description}
               </span>
-            </Link>
+            </NavLink>
           ))}
 
           <span className={`flex justify-center lg:hidden cursor-pointer `}>

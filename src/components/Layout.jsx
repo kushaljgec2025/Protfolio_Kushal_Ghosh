@@ -1,15 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Head from "./Head";
-import Contact from "./Contact";
+
 function Layout() {
   return (
-    <div>
-      <Head />
+    <div className="container w-full px-1 py-2 flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">
       <Outlet />
-      <Contact />
     </div>
   );
 }
 
-export default Layout;
+export default Layout; // Ensure the component is exported

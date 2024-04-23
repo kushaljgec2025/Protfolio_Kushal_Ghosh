@@ -110,10 +110,7 @@ function Skill() {
     },
   ];
   return (
-    <div
-      id="Skill"
-      className="flex justify-center w-full items-center pt-[15vh]"
-    >
+    <div className="flex justify-center w-full items-center pt-[15vh]">
       <div className="lg:w-[70%] w-[90%] " data-aos="fade-up">
         <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
           SKILL
@@ -222,6 +219,7 @@ function Skill() {
         </div>
         <Line />
       </div>
+      {/* <div>skill</div> */}
     </div>
   );
 }
