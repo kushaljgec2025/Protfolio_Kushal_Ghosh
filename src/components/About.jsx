@@ -79,8 +79,7 @@ function About() {
 
             <div className=" flex flex-row justify-between lg:w-[80%] items-end m-auto my-4  gap-5">
               <Link
-                to="https://blog-page-two-kohl.vercel.app/"
-                target="_blank"
+                to="/blogs"
                 className="bg-slate bg-opacity-50 backdrop backdrop-blur-md flex justify-center items-center w-[40vw]  transition duration-500 ease-in-out  gap-2  p-1 py-2 text-center rounded-md hover:shadow-2xl hover:ring-midblue hover:ring-2  dark:hover:text-white hover:text-gray  ring-white ring-1"
               >
                 My Blogs
