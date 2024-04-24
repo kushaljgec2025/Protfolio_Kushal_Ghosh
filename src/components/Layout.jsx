@@ -4,7 +4,7 @@ import Head from "./Head";
 
 function Layout() {
   return (
-    <div className="container w-full px-1 py-2 flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">
+    <div className="w-full px-1 py-2 flex flex-col justify-center items-center  dark:bg-info dark:bg-transparent  dark:text-slate ">
       <Outlet />
     </div>
   );

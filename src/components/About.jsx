@@ -2,6 +2,7 @@ import React from "react";
 import Line from "./Line";
 import user_img_col from "../img/use_img_col.jpg";
 import { Github, Facebook, Instagram, Linkedin } from "./Links";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaBloggerB } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { IoIosPaper } from "react-icons/io";
@@ -12,32 +13,32 @@ function About() {
     {
       name: "Facebook",
       link: "https://www.facebook.com/kggibesup/",
-      icon: <Facebook className={icon_attr} />,
+      icon: <FaFacebook className={icon_attr} size={"3em"} />,
     },
     {
       name: "Instagram",
       link: "https://www.instagram.com/kishueal/",
-      icon: <Instagram className={icon_attr} />,
+      icon: <FaInstagram className={icon_attr} size={"3em"} />,
     },
     {
       name: "Linkedin",
       link: "https://www.linkedin.com/in/kushaljgec2025/",
-      icon: <Linkedin className={icon_attr} />,
+      icon: <FaLinkedin className={icon_attr} size={"3em"} />,
     },
     {
       name: "Github",
       link: "https://github.com/kushaljgec2025",
-      icon: <Github className={icon_attr} />,
+      icon: <FaGithub className={icon_attr} size={"3em"} />,
     },
   ];
   return (
     <>
       <div className="flex justify-center w-full items-center pt-[15vh]">
-        <div className="lg:w-[70%] w-[90%] " data-aos="fade-up">
+        <div className="lg:w-[70%] w-[90%]  min-h-screen " data-aos="fade-up">
           <h1 className=" text-2xl   text-center sm:text-left text-midblue">
             ABOUT
           </h1>
-          <div>
+          <div className="">
             <p>
               Hello, my name is Kushal Ghosh. I'm currently pursuing B.Tech in
               Information Technology at Jalpaiguri Government Engineering
@@ -63,10 +64,10 @@ function About() {
                 alt="img"
               />
             </div>
-            <div className="   flex z-10 justify-around  items-end gap-4 py-2   ">
+            <div className="   flex z-10 justify-around md:w-[60%] m-auto items-end gap-4 py-2   ">
               {about_links.map((link, index) => (
                 <a
-                  className=" bg-gray backdrop backdrop-blur-md bg-opacity-30 ring-1 ring-gray hover:ring-midblue hover:ring-2   p-1 rounded-lg shadow-xl "
+                  className=" dark:text-slate text-white ring-1 ring-gray hover:ring-midblue hover:ring-2   p-1 rounded-lg shadow-xl "
                   key={index}
                   href={link.link}
                   target="_blank"
@@ -79,7 +80,8 @@ function About() {
 
             <div className=" flex flex-row justify-between lg:w-[80%] items-end m-auto my-4  gap-5">
               <Link
-                to="/blogs"
+                to="https://blog-page-two-kohl.vercel.app/"
+                target="_blank"
                 className="bg-slate bg-opacity-50 backdrop backdrop-blur-md flex justify-center items-center w-[40vw]  transition duration-500 ease-in-out  gap-2  p-1 py-2 text-center rounded-md hover:shadow-2xl hover:ring-midblue hover:ring-2  dark:hover:text-white hover:text-gray  ring-white ring-1"
               >
                 My Blogs

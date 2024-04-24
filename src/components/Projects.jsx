@@ -85,7 +85,7 @@ const other_projects = [
 function Projects() {
   return (
     <div className="flex justify-center w-full items-center pt-[15vh]">
-      <div className="lg:w-[70%] w-[90%] " data-aos="fade-up">
+      <div className="lg:w-[70%] w-[90%] min-h-screen " data-aos="fade-up">
         <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
           PROJECTS
         </h1>

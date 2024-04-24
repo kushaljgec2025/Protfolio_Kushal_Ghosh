@@ -44,7 +44,7 @@ function Contact() {
   ];
   return (
     <div className="flex justify-center w-full items-center pt-[15vh]">
-      <div className="lg:w-[70%] w-[90%] " data-aos="fade-up">
+      <div className="lg:w-[70%] w-[90%] min-h-screen " data-aos="fade-up">
         <h1 className="contact text-2xl mb-4 text-center sm:text-left text-midblue">
           CONTACT
         </h1>
@@ -94,7 +94,7 @@ function Contact() {
               </div>
 
               <button
-                className="bg-gradient-to-t  from-cayn to-blue p-2 col-span-2 w-[80%] m-auto rounded-xl ring-white hover:ring-1 "
+                className=" ring-2  px-4 p-1 col-span-2  m-auto rounded-xl ring-white hover:ring-1 "
                 type="submit"
                 onClick={sendEmail}
               >

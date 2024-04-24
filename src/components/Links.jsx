@@ -4,8 +4,8 @@ export function Linkedin(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -21,8 +21,8 @@ export function Codeforce(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -38,8 +38,8 @@ export function Leetcode(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -55,8 +55,8 @@ export function Geeksforgeeks(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -72,8 +72,8 @@ export function Github(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -89,8 +89,8 @@ export function Facebook(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -106,8 +106,8 @@ export function Instagram(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -123,8 +123,8 @@ export function C(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -140,8 +140,8 @@ export function Python(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 255"
       {...props}
     >
@@ -183,8 +183,8 @@ export function Javascript(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 128 128"
       {...props}
     >
@@ -201,8 +201,8 @@ export function Mysql(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1.47em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 512 349"
       {...props}
     >
@@ -226,8 +226,8 @@ export function Html(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="0.71em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 361"
       {...props}
     >
@@ -256,8 +256,8 @@ export function Css(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="0.71em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 361"
       {...props}
     >
@@ -283,8 +283,8 @@ export function Tailwindcss(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 128 128"
       {...props}
     >
@@ -300,8 +300,8 @@ export function Reactjs(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 32 32"
       {...props}
     >
@@ -326,8 +326,8 @@ export function Nextjs(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 15 15"
       {...props}
     >
@@ -345,8 +345,8 @@ export function ReactNative(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
       {...props}
     >
@@ -372,8 +372,8 @@ export function Unity(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 128 128"
       {...props}
     >
@@ -394,8 +394,8 @@ export function Blender(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 256"
       {...props}
     >
@@ -422,8 +422,8 @@ export function Figma(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="0.67em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 384"
       {...props}
     >
@@ -455,8 +455,8 @@ export function Jquery(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 256"
       {...props}
     >
@@ -513,8 +513,8 @@ export function Tensorflow(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="0.94em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 256 274"
       {...props}
     >
@@ -538,8 +538,8 @@ export function Numpy(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 128 128"
       {...props}
     >
@@ -559,8 +559,8 @@ export function Pandas(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 128 128"
       {...props}
     >
@@ -583,8 +583,8 @@ export function Eye(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="2em"
-      height="2em"
+      width={props.size}
+      height={props.size}
       viewBox="0 0 32 32"
       {...props}
     >

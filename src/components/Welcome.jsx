@@ -6,7 +6,7 @@ function Welcome() {
   return (
     <>
       <div className="flex justify-center w-full items-center pt-[15vh] ">
-        <div className="lg:w-[70%] w-[90%] " data-aos="fade-up">
+        <div className="lg:w-[70%] w-[90%] min-h-screen  " data-aos="fade-up">
           <div className="  flex  lg:flex-row flex-col justify-center gap-2  ">
             <div className=" flex justify-center  lg:w-[25em] m-auto rounded-[50%] border-5 border-gray   ">
               <img className=" z-1  m-auto" src={user_img} alt="user_img" />

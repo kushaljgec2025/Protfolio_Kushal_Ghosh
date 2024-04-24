@@ -31,7 +31,8 @@ function Footer() {
       </div>
       <div>
         <Link
-          to="https://github.com/kushaljgec2025/BlogPage"
+          to="https://github.com/kushaljgec2025/Protfolio_Kushal_Ghosh"
+          target="_blank"
           className="flex justify-center items-center gap-2 bg-white text-slate p-2 rounded-lg hover:bg-gray hover:text-white duration-300"
         >
           Show your love here

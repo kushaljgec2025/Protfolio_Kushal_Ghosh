@@ -90,17 +90,17 @@ function Head() {
   return (
     <div className="w-full m-auto flex justify-center select-none ">
       <div
-        className={`bg-midblue dark:bg-gray backdrop backdrop-blur-md dark:bg-opacity-20 bg-opacity-20 w-full h-[10vh] rounded-b-xl lg:hidden fixed  z-40`}
+        className={`bg-midblue dark:bg-gray backdrop backdrop-blur-md dark:bg-opacity-20 bg-opacity-20 w-full h-[10vh] rounded-b-xl md:hidden fixed  z-40`}
       ></div>
-      <div className="fixed top-2 lg:hidden z-50 left-4">
+      <div className="fixed top-2 md:hidden z-50 left-4">
         <Hamburger toggled={isOpen} toggle={setOpen} />
       </div>
       <div
         className={`${
           isOpen ? "fixed" : "hidden"
-        } lg:block mt-10 lg:mt-3 z-20 lg:bg-gradient-to-r from-cayn fixed overflow-hidden  to-blue w-[95%] shadow-3xl bg-slate pb-2   backdrop-filter   backdrop-blur-md bg-opacity-80   rounded-lg shadow-2xl  lg:w-[60%] `}
+        } md:block mt-10 md:mt-3 z-20 md:bg-gradient-to-r from-cayn fixed overflow-hidden  to-blue w-[95%] shadow-3xl bg-slate pb-2   backdrop-filter   backdrop-blur-md bg-opacity-80   rounded-lg shadow-2xl  md:w-[60%] `}
       >
-        <div className="flex lg:flex-row lg:-end flex-col  gap-4 m-auto justify-around lg:py-0 pt-8">
+        <div className="flex md:flex-row md:-end flex-col  gap-4 m-auto justify-around md:py-0 pt-8">
           {items.map((item) => (
             <NavLink
               activeClass="active"
@@ -113,11 +113,13 @@ function Head() {
               onClick={() => {
                 handleClick(item);
               }}
-              className={`group w-full  lg:w-[4em] h-[3em] m-1   self-center hover:text-slate   lg:rounded-b-xl   text-white text-xl  flex flex-col justify-center items-center cursor-pointer
+              className={({
+                isActive,
+              }) => `group w-full  md:w-[4em] h-[3em] m-1   self-center hover:text-slate   md:rounded-b-xl   text-white text-xl  flex flex-col justify-center items-center cursor-pointer
             ${
-              isActive == item.id
-                ? "lg:text-slate  lg:bg-white lg:bg-opacity-80  lg:shadow-2xl"
-                : "lg:text-white lg:translate-y-2"
+              isActive
+                ? "md:text-slate  md:bg-white md:bg-opacity-80  md:shadow-2xl"
+                : "md:text-white md:translate-y-2"
             }
               }`}
             >
@@ -125,8 +127,8 @@ function Head() {
               <span
                 className={`${
                   isActive == item.id
-                    ? "lg:visible lg:text-slate"
-                    : "lg:invisible lg:text-white lg:-translate-y-4"
+                    ? "md:visible md:text-slate"
+                    : "md:invisible md:text-white md:-translate-y-4"
                 } text-sm  text-center text-white `}
               >
                 {item.description}
@@ -134,7 +136,7 @@ function Head() {
             </NavLink>
           ))}
 
-          <span className={`flex justify-center lg:hidden cursor-pointer `}>
+          <span className={`flex justify-center md:hidden cursor-pointer `}>
             <CiCircleChevUp
               className="text-white text-[2em]  "
               onClick={(prev) => setOpen(!prev)}
