@@ -46,7 +46,7 @@ function Lowernav() {
   ];
 
   return (
-    <div className="bg-white p-2 fixed z-20 bottom-4 backdrop ring-1 shadow-lg ring-gray  w-[90%] backdrop-blur-md bg-opacity-50 sm:hidden rounded-full flex justify-around gap-4">
+    <div className="bg-white p-2 fixed z-20 bottom-4 backdrop ring-1 shadow-xl ring-gray  w-[90%] backdrop-blur-md bg-opacity-50 sm:hidden rounded-full flex justify-around gap-4">
       {items.map((item) => (
         <NavLink
           to={item.link}

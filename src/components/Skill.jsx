@@ -17,9 +17,10 @@ import {
   Figma,
   ReactNative,
   Mysql,
+  DeviconAppwrite,
 } from "./Links";
 function Skill() {
-  const skill_icon_attr = "m-auto -translate-y-1  ";
+  const skill_icon_attr = "m-auto   ";
   const icon_size = "2em";
   const prog_langs = [
     {
@@ -36,16 +37,6 @@ function Skill() {
       name: "Javascript",
       level: "Intermediate",
       icons: <Javascript className={skill_icon_attr} size={icon_size} />,
-    },
-    {
-      name: "Html",
-      level: "Intermediate",
-      icons: <Html className={skill_icon_attr} size={icon_size} />,
-    },
-    {
-      name: "Mysql",
-      level: "Intermediate",
-      icons: <Mysql className={skill_icon_attr} size={icon_size} />,
     },
   ];
   const fronted_tools = [
@@ -65,32 +56,29 @@ function Skill() {
       level: "Intermediate",
       icons: <Nextjs className={skill_icon_attr} size={icon_size} />,
     },
+
     {
-      name: "ReactNative",
+      name: "Html",
       level: "Intermediate",
-      icons: <ReactNative className={skill_icon_attr} size={icon_size} />,
+      icons: <Html className={skill_icon_attr} size={icon_size} />,
     },
+
     {
       name: "Css",
       level: "Intermediate",
       icons: <Css className={skill_icon_attr} size={icon_size} />,
     },
   ];
-  const design_tools = [
+  const backend_and_database = [
     {
-      name: "Blender",
+      name: "MySql",
       level: "Intermediate",
-      icons: <Blender className={skill_icon_attr} size={icon_size} />,
+      icons: <Mysql className={skill_icon_attr} size={icon_size} />,
     },
     {
-      name: "Unity",
+      name: "AppWrite",
       level: "Intermediate",
-      icons: <Unity className={skill_icon_attr} size={icon_size} />,
-    },
-    {
-      name: "Figma",
-      level: "Intermediate",
-      icons: <Figma className={skill_icon_attr} size={icon_size} />,
+      icons: <DeviconAppwrite className={skill_icon_attr} size={icon_size} />,
     },
   ];
   const familiar_with = [
@@ -109,6 +97,16 @@ function Skill() {
       level: "Intermediate",
       icons: <Tensorflow className={skill_icon_attr} size={icon_size} />,
     },
+    {
+      name: "Figma",
+      level: "Intermediate",
+      icons: <Figma className={skill_icon_attr} size={icon_size} />,
+    },
+    {
+      name: "ReactNative",
+      level: "Intermediate",
+      icons: <ReactNative className={skill_icon_attr} size={icon_size} />,
+    },
   ];
   return (
     <div className="flex justify-center w-full items-center pt-[15vh]">
@@ -116,9 +114,9 @@ function Skill() {
         <h1 className=" text-2xl mb-4 text-center sm:text-left text-midblue">
           SKILL
         </h1>
-        <div className="flex md:flex-row w-full justify-around flex-col flex-wrap p-4">
+        <div className="flex md:flex-row w-full justify-around flex-col flex-wrap p-4 gap-4">
           <div className="Programming-Languages grow  mt-0">
-            <h2 className="text-lg font-semibold my-4   text-center">
+            <h2 className="text-lg font-semibold my-4   text-center bg-white text-slate dark:bg-slate dark:text-white ">
               Programming Language
             </h2>
 
@@ -127,9 +125,9 @@ function Skill() {
                 return (
                   <li
                     key={index}
-                    className="  flex justify-start   m-auto min-w-[80%]  items-center gap-5 "
+                    className="  flex justify-start   m-auto min-w-[80%] w-full items-center gap-5 "
                   >
-                    <div className="bg-blue    flex justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-20   rounded-md p-2 hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
+                    <div className="bg-blue flex justify-center items-center   backdrop-filter backdrop-blur-md bg-opacity-20   rounded-md p-2 hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
                       {lang.icons}
                     </div>
 
@@ -144,9 +142,9 @@ function Skill() {
               })}
             </ul>
           </div>
-          <div className="Frontend-Languages grow  mt-0">
-            <h2 className="text-lg font-semibold my-4   text-center">
-              Frontend Languages
+          <div className="backend grow mt-0">
+            <h2 className="text-lg font-semibold my-4   text-center bg-white text-slate dark:bg-slate dark:text-white">
+              Frontend Tools
             </h2>
 
             <ul className="flex flex-col  justify-center items-start   ">
@@ -154,7 +152,7 @@ function Skill() {
                 return (
                   <li
                     key={index}
-                    className="flex justify-start   m-auto min-w-[80%]  items-center gap-5 "
+                    className="flex justify-start   m-auto min-w-[80%] w-full  items-center gap-5 "
                   >
                     <div className="bg-blue   flex justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-20   rounded-md p-2 hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
                       {lang.icons}
@@ -170,19 +168,19 @@ function Skill() {
               })}
             </ul>
           </div>
-          <div className="Design-tools grow mt-0">
-            <h2 className="text-lg font-semibold my-4   text-center">
-              Design Tools
+          <div className="backend grow mt-0">
+            <h2 className="text-lg font-semibold my-4   text-center bg-white text-slate dark:bg-slate dark:text-white">
+              Backend and Database
             </h2>
 
             <ul className="flex flex-col  justify-center items-start   ">
-              {design_tools.map((lang, index) => {
+              {backend_and_database.map((lang, index) => {
                 return (
                   <li
                     key={index}
-                    className="flex justify-start   m-auto min-w-[80%]  items-center gap-5 "
+                    className="flex justify-start   m-auto min-w-[80%] w-full  items-center gap-5 "
                   >
-                    <div className="bg-blue   flex justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-20   rounded-md p-2 hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
+                    <div className="bg-blue   flex justify-center items-center p-2 backdrop-filter backdrop-blur-md bg-opacity-20   rounded-md  hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
                       {lang.icons}
                     </div>
                     <div className="basis-1/2 md:basis-auto">
@@ -197,7 +195,7 @@ function Skill() {
             </ul>
           </div>
           <div className="familliar-with grow mt-0">
-            <h2 className="text-lg font-semibold my-4   text-center">
+            <h2 className="text-lg font-semibold my-4   text-center bg-white text-slate dark:bg-slate dark:text-white">
               Familliar with
             </h2>
 
@@ -206,7 +204,7 @@ function Skill() {
                 return (
                   <li
                     key={index}
-                    className="flex justify-start   m-auto min-w-[80%]  items-center gap-5 "
+                    className="flex justify-start   m-auto min-w-[80%] w-full  items-center gap-5 "
                   >
                     <div className="bg-blue   flex justify-center items-center backdrop-filter backdrop-blur-md bg-opacity-20   rounded-md p-2 hover:ring-1 ring-blue transition duration-500 hover:bg-opacity-20 hover:bg-white">
                       {lang.icons}

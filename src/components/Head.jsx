@@ -98,7 +98,7 @@ function Head() {
       <div
         className={`${
           isOpen ? "fixed" : "hidden"
-        } md:block mt-10 md:mt-3 z-20 md:bg-gradient-to-r from-cayn fixed overflow-hidden  to-blue w-[95%] shadow-3xl bg-slate pb-2   backdrop-filter   backdrop-blur-md bg-opacity-80   rounded-lg shadow-2xl  md:w-[60%] `}
+        } md:block mt-10 md:mt-3 z-20 md:bg-gradient-to-r from-cayn  to-blue w-[95%] shadow-3xl fixed overflow-hidden  bg-slate pb-2   backdrop-filter   backdrop-blur-md bg-opacity-80   rounded-lg shadow-2xl  md:w-[60%] `}
       >
         <div className="flex md:flex-row md:-end flex-col  gap-4 m-auto justify-around md:py-0 pt-8">
           {items.map((item) => (
