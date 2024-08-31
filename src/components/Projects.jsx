@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import skill_img from "../img/skill_img.png";
 import Protfolio_img from "../img/Protfolio_img.png";
+import Grow_stock from "../img/Grow_stock.png";
 import Foodzone_img from "../img/FoodZone_img.jpg";
 import Climesky_img from "../img/Climesky_img.jpg";
 import Zenrit_img from "../img/Zenrit_img.png";
@@ -23,6 +24,15 @@ const frontend_projects = [
     demo: "https://blog-page-two-kohl.vercel.app/",
     img: Zenrit_img,
     skill: ["React.js", "Redux Toolkit", "Tailwind CSS", "Appwrite BaaS"],
+  },
+  {
+    name: "Grow Stock",
+    description:
+      "This application is designed to provide users with up-to-date information on the top gainers and losers in the stock market. Users can explore these sections and view detailed information and price trends for individual stocks/ETFs. Follow the Installation Guidelines for run the app in local machine.",
+    github: "https://github.com/kushaljgec2025/grow_stock",
+    demo: "https://drive.google.com/file/d/1cWirMwrmC5xJpeJzs-cmg8AAEaosuP_s/view",
+    img: Grow_stock,
+    skill: ["React Native Expo", "Redux Toolkit", "Alpha Vantage API"],
   },
   {
     name: "Portfolio",
