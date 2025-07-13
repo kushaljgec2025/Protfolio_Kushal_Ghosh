@@ -1,9 +1,9 @@
 import React from "react";
 import user_img from "../img/user_img.png";
 import Line from "./Line";
-
+import TypingEffect from "./effect/TypingEffect";
 import { useState } from "react";
-import { FaXTwitter, FaGithub, FaLinkedin } from "react-icons/fa6";
+import { FaXTwitter, FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa6";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 
@@ -28,6 +28,12 @@ function Welcome() {
       link: "https://twitter.com/kg_codex2",
       icon: <FaXTwitter className={icon_attr} />,
     },
+    {
+      id: 4,
+      name: "Youtube",
+      link: "https://www.youtube.com/@kushal_ghosh_iit_madras",
+      icon: <FaYoutube className={icon_attr}></FaYoutube>,
+    },
   ];
   return (
     <>
@@ -43,14 +49,19 @@ function Welcome() {
             </div>
 
             <div className=" basis-1/2 flex justify-center flex-col   gap-5 ">
-              <h1>HEY , I AM</h1>
+              <h1 className="text-xl">HEY , I AM</h1>
               <h1 className="name-heading text-5xl font-semibold  from-cayn to-blue bg-gradient-to-r bg-clip-text ">
                 Kushal Ghosh
               </h1>
               <p className="dark:bg-white bg-gray bg-opacity-40 p-2 rounded-lg shadow-sm font-medium  ">
-                A dedicated Frontend Developer and avid competitive programmer,
-                deeply passionate about Data Structures and Algorithms, driven
-                by a fervent enthusiasm for problem-solving.
+                I'm <strong className="text-cayn">Kushal Ghosh</strong> — an{" "}
+                <strong className="text-cayn">
+                  AI/ML and Software Development
+                </strong>{" "}
+                enthusiast. I've solved{" "}
+                <strong className="text-cayn">1500+</strong> DSA problems across
+                platforms like LeetCode, Codeforces, and CodeChef. I love
+                turning complex challenges into clean, efficient solutions.
               </p>
               <div className="flex md:flex-row flex-col w-full justify-around gap-4">
                 {social_link.map((item) => {
@@ -69,13 +80,7 @@ function Welcome() {
                   );
                 })}
               </div>
-              <div className="">
-                <div className=" w-[calc(100%-16vw)] ">
-                  <h1 className="p-1 animate-typing leading-tight overflow-hidden    whitespace-nowrap border-r-4 border-r-gray pr-5 text-5xl text-white dark:text-slate  font-bold">
-                    kg_codex
-                  </h1>
-                </div>
-              </div>
+              <TypingEffect />
             </div>
           </div>
         </div>

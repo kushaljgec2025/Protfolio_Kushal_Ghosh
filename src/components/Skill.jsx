@@ -18,6 +18,7 @@ import {
   ReactNative,
   Mysql,
   DeviconAppwrite,
+  Firebase,
 } from "./Links";
 function Skill() {
   const skill_icon_attr = "m-auto   ";
@@ -39,7 +40,7 @@ function Skill() {
       icons: <Javascript className={skill_icon_attr} size={icon_size} />,
     },
   ];
-  const fronted_tools = [
+  const Development_tools = [
     {
       name: "Tailwindcss",
       level: "Intermediate",
@@ -52,11 +53,10 @@ function Skill() {
       icons: <Reactjs className={skill_icon_attr} size={icon_size} />,
     },
     {
-      name: "Nextjs",
+      name: "ReactNative",
       level: "Intermediate",
-      icons: <Nextjs className={skill_icon_attr} size={icon_size} />,
+      icons: <ReactNative className={skill_icon_attr} size={icon_size} />,
     },
-
     {
       name: "Html",
       level: "Intermediate",
@@ -80,6 +80,11 @@ function Skill() {
       level: "Intermediate",
       icons: <DeviconAppwrite className={skill_icon_attr} size={icon_size} />,
     },
+    {
+      name: "Firebase",
+      level: "Intermediate",
+      icons: <Firebase className={skill_icon_attr} size={icon_size} />,
+    },
   ];
   const familiar_with = [
     {
@@ -101,11 +106,6 @@ function Skill() {
       name: "Figma",
       level: "Intermediate",
       icons: <Figma className={skill_icon_attr} size={icon_size} />,
-    },
-    {
-      name: "ReactNative",
-      level: "Intermediate",
-      icons: <ReactNative className={skill_icon_attr} size={icon_size} />,
     },
   ];
   return (
@@ -144,11 +144,11 @@ function Skill() {
           </div>
           <div className="backend grow mt-0">
             <h2 className="text-lg font-semibold my-4   text-center bg-white text-slate dark:bg-slate dark:text-white">
-              Frontend Tools
+              Development Tools
             </h2>
 
             <ul className="flex flex-col  justify-center items-start   ">
-              {fronted_tools.map((lang, index) => {
+              {Development_tools.map((lang, index) => {
                 return (
                   <li
                     key={index}
