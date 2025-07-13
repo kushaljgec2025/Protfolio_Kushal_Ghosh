@@ -203,7 +203,6 @@ function Projects() {
             </div>
           </div>
         </div>
-        <Line />
       </div>
     </div>
   );

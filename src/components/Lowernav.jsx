@@ -9,6 +9,7 @@ import {
   CiHome,
   CiSun,
   CiCloudMoon,
+  CiBank,
 } from "react-icons/ci";
 function Lowernav() {
   const items = [
@@ -24,12 +25,11 @@ function Lowernav() {
       description: "About",
       link: "/about",
     },
-
     {
       id: 3,
-      name: <CiGrid42 className="m-auto self-center" />,
-      description: "Skill",
-      link: "/skill",
+      name: <CiBank className="m-auto self-center" />,
+      description: "Education",
+      link: "/education",
     },
     {
       id: 4,

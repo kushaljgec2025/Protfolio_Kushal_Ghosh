@@ -8,6 +8,7 @@ import {
   CiHome,
   CiSun,
   CiCloudMoon,
+  CiBank,
 } from "react-icons/ci";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
@@ -66,21 +67,26 @@ function Head() {
       description: "About",
       link: "/about",
     },
-
     {
       id: 3,
+      name: <CiBank className="m-auto self-center" />,
+      description: "Education",
+      link: "/education",
+    },
+    {
+      id: 4,
       name: <CiGrid42 className="m-auto self-center" />,
       description: "Skill",
       link: "/skill",
     },
     {
-      id: 4,
+      id: 5,
       name: <CiMonitor className="m-auto self-center" />,
       description: "Projects",
       link: "/projects",
     },
     {
-      id: 5,
+      id: 6,
       name: <CiPhone className="m-auto self-center" />,
       description: "Contact",
       link: "/contact",

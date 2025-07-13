@@ -10,6 +10,7 @@ import {
 import App from "./App.jsx";
 import About from "./components/About.jsx";
 import Welcome from "./components/Welcome.jsx";
+import Education from "./components/Education.jsx";
 import Resume from "./components/Resume.jsx";
 import Skill from "./components/Skill.jsx";
 import Projects from "./components/Projects.jsx";
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "education",
+        element: <Education />,
       },
       {
         path: "skill",

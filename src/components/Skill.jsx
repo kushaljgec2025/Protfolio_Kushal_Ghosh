@@ -19,6 +19,7 @@ import {
   Mysql,
   DeviconAppwrite,
   Firebase,
+  Mongodb,
 } from "./Links";
 function Skill() {
   const skill_icon_attr = "m-auto   ";
@@ -31,7 +32,7 @@ function Skill() {
     },
     {
       name: "Python",
-      level: "Intermediate",
+      level: "Beginner",
       icons: <Python className={skill_icon_attr} size={icon_size} />,
     },
     {
@@ -85,21 +86,26 @@ function Skill() {
       level: "Intermediate",
       icons: <Firebase className={skill_icon_attr} size={icon_size} />,
     },
+    {
+      name: "MongoDB",
+      level: "Beginner",
+      icons: <Mongodb className={skill_icon_attr} size={icon_size} />,
+    },
   ];
   const familiar_with = [
     {
       name: "Numpy",
-      level: "Intermediate",
+      level: "Beginner",
       icons: <Numpy className={skill_icon_attr} size={icon_size} />,
     },
     {
       name: "Pandas",
-      level: "Intermediate",
+      level: "Beginner",
       icons: <Pandas className={skill_icon_attr} size={icon_size} />,
     },
     {
       name: "Tensorflow",
-      level: "Intermediate",
+      level: "Beginner",
       icons: <Tensorflow className={skill_icon_attr} size={icon_size} />,
     },
     {
