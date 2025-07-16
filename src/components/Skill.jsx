@@ -20,6 +20,7 @@ import {
   DeviconAppwrite,
   Firebase,
   Mongodb,
+  Shadcn,
 } from "./Links";
 function Skill() {
   const skill_icon_attr = "m-auto   ";
@@ -41,18 +42,23 @@ function Skill() {
       icons: <Javascript className={skill_icon_attr} size={icon_size} />,
     },
   ];
-  const Development_tools = [
-    {
-      name: "Tailwindcss",
-      level: "Intermediate",
-      icons: <Tailwindcss className={skill_icon_attr} size={icon_size} />,
-    },
-
+  const Frontend_tools = [
     {
       name: "Reactjs",
       level: "Intermediate",
       icons: <Reactjs className={skill_icon_attr} size={icon_size} />,
     },
+    {
+      name: "Tailwindcss",
+      level: "Intermediate",
+      icons: <Tailwindcss className={skill_icon_attr} size={icon_size} />,
+    },
+    {
+      name: "Shadcn",
+      level: "Intermediate",
+      icons: <Shadcn className={skill_icon_attr} size={icon_size} />,
+    },
+
     {
       name: "ReactNative",
       level: "Intermediate",
@@ -150,11 +156,11 @@ function Skill() {
           </div>
           <div className="backend grow mt-0">
             <h2 className="text-lg font-semibold my-4   text-center bg-white text-slate dark:bg-slate dark:text-white">
-              Development Tools
+              Frontend Tools
             </h2>
 
             <ul className="flex flex-col  justify-center items-start   ">
-              {Development_tools.map((lang, index) => {
+              {Frontend_tools.map((lang, index) => {
                 return (
                   <li
                     key={index}
